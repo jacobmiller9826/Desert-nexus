@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desert Nexus - Fund the Vision</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌵 Desert Nexus - Fund</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vote.html">Vote</a>
+      <a href="fund.html">Fund</a>
+      <a href="chat.html">Ask</a>
+      <a href="deck.pdf" download>📄 Pitch Deck</a>
+    </nav>
+    <button onclick="toggleTheme()">🌓 Theme</button>
+    <button onclick="toggleLang()">🌐 EN/ES</button>
+  </header>
+
+  <main>
+    <section>
+      <h2 data-lang="fund-title">Crowdfund the Dream</h2>
+      <p data-lang="fund-sub">Invest in the transformation of Tucson Mall — every ETH matters.</p>
+    </section>
+
+    <section>
+      <h3 data-lang="wallet-title">Your ETH Wallet</h3>
+      <p><strong>Balance:</strong> <span id="walletBalance">0</span> ETH</p>
+      <input type="number" id="walletInput" placeholder="Add ETH (e.g. 0.5)" step="0.01" />
+      <button onclick="addEth()">💰 Add ETH</button>
+    </section>
+
+    <section>
+      <h3 data-lang="donate-title">Donate to Desert Nexus</h3>
+      <input type="number" id="donationInput" placeholder="Donate ETH" step="0.01" />
+      <button onclick="donateEth()">🚀 Send Donation</button>
+      <p><strong>Total Raised:</strong> <span id="totalDonated">0</span> ETH</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Desert Nexus Project</p>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="lang.js"></script>
+  <script src="fund.js"></script>
+</body>
+</html>
