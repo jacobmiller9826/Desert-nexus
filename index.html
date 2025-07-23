@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desert Nexus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header>
+    <h1 id="title">🌵 Desert Nexus</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vote.html">Vote</a>
+      <a href="fund.html">Fund</a>
+      <a href="chat.html">Ask</a>
+      <a href="deck.pdf" download>📄 Pitch Deck</a>
+    </nav>
+    <div class="toggles">
+      <button onclick="toggleTheme()">🌓 Theme</button>
+      <button onclick="toggleLang()">🌐 EN/ES</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2 data-lang="intro-title">Welcome to the Desert Nexus</h2>
+      <p data-lang="intro-body">
+        A revitalization plan for the former Sears Center at Tucson Mall — blending affordable fun, family education, and regional innovation.
+      </p>
+    </section>
+
+    <section id="pitch">
+      <h3 data-lang="pitch-title">Our Vision</h3>
+      <ul>
+        <li data-lang="line1">🏎️ Indoor go-karts using the old auto bay</li>
+        <li data-lang="line2">🖨️ 3D printing lab and tech zone for kids</li>
+        <li data-lang="line3">🎮 Cyber defense & gaming simulation range</li>
+        <li data-lang="line4">🍲 Affordable food courts + family deals</li>
+        <li data-lang="line5">💼 Investor-ready, cross-border (MX + CN) friendly</li>
+        <li data-lang="line6">🪙 Local tokens for fun + community voting</li>
+      </ul>
+    </section>
+
+    <section id="call">
+      <h3 data-lang="call-title">Why Now?</h3>
+      <p data-lang="call-body">
+        Families are strapped. The desert is under-leveraged. This space can be a new economic node — for fun, learning, and long-term growth.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Desert Nexus Project. All rights reserved.</p>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>
