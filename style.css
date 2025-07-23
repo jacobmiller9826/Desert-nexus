@@ -1,0 +1,50 @@
+:root {
+  --bg: #f4efe6;
+  --text: #222;
+  --accent: #c28545;
+}
+body.dark {
+  --bg: #1e1e1e;
+  --text: #eee;
+  --accent: #f4b860;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--accent);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+nav a {
+  margin: 0 0.5rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+}
+.toggles {
+  margin-top: 0.5rem;
+}
+main {
+  padding: 2rem;
+}
+ul {
+  padding-left: 1.2rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
