@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desert Nexus - Vote</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌵 Desert Nexus - Vote</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vote.html">Vote</a>
+      <a href="fund.html">Fund</a>
+      <a href="chat.html">Ask</a>
+      <a href="deck.pdf" download>📄 Pitch Deck</a>
+    </nav>
+    <button onclick="toggleTheme()">🌓 Theme</button>
+    <button onclick="toggleLang()">🌐 EN/ES</button>
+  </header>
+
+  <main>
+    <section>
+      <p id="tokenCount"></p>
+      <button id="getTokensBtn">Get 10 DESERT Tokens (daily)</button>
+    </section>
+
+    <section>
+      <h2 data-lang="vote-title">Vote on Project Features</h2>
+      <ul id="featureList">
+        <!-- Features inserted by JS -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Desert Nexus Project</p>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="lang.js"></script>
+  <script src="vote.js"></script>
+</body>
+</html>
